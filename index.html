@@ -2,472 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Twinkling Petals | Pre School & Day Care</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-  <meta name="description" content="Twinkling Petals Pre School & Day Care in Kaval Bairasandra, Bengaluru – Playgroup, Nursery, Junior KG, Senior KG and Day Care for children 18 months – 12 years." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <title>Twinkling Petals – Pre School & Day Care | Bengaluru</title>
+  <meta name="description" content="Twinkling Petals Pre School & Day Care in Kaval Bairasandra, Bengaluru. Playgroup, Nursery, LKG, UKG & Day Care." />
 
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Intro Splash (brand zoom animation) -->
-  <div id="introSplash" class="intro-splash" aria-hidden="true">
-    <div class="intro-inner">
-      <div class="intro-logo">
-        <span class="intro-logo-main">Twinkling Petals</span>
-        <span class="intro-logo-sub">PRE SCHOOL / DAY CARE</span>
-      </div>
+
+<header class="navbar">
+  <div class="container">
+    <div class="brand">
+      <h1>Twinkling Petals</h1>
+      <span>Pre School / Day Care</span>
+    </div>
+    <nav>
+      <a href="#programs">Programs</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>A joyful start to your child’s learning journey</h2>
+    <p>Creative learning for children aged 18 months – 12 years</p>
+    <a href="#admissions" class="btn">Enquire Now</a>
+  </div>
+</section>
+
+<section id="programs" class="section">
+  <div class="container">
+    <h2>Our Programs</h2>
+    <ul class="cards">
+      <li><strong>Playgroup</strong><span>2 – 3 years</span></li>
+      <li><strong>Nursery</strong><span>3 – 4 years</span></li>
+      <li><strong>Junior KG (LKG)</strong><span>4 – 5 years</span></li>
+      <li><strong>Senior KG (UKG)</strong><span>5 – 6 years</span></li>
+      <li><strong>Day Care</strong><span>18 months – 12 years</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="about" class="section light">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      Twinkling Petals provides a safe, colourful and nurturing environment
+      where children grow through play, creativity and structured learning.
+    </p>
+    <p>
+      Our caring teachers, small class sizes and secure campus ensure
+      every child feels confident and happy.
+    </p>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="event-independence-1.jpeg" alt="School event">
+      <img src="event-independence-2.jpeg" alt="Classroom activity">
+      <img src="event-independence-3.jpeg" alt="Kids activity">
     </div>
   </div>
+</section>
 
-  <!-- Skip link -->
-  <a href="#main" class="skip-to-content">Skip to content</a>
+<section id="admissions" class="section light">
+  <div class="container">
+    <h2>Admissions Open</h2>
+    <form>
+      <input placeholder="Child Name" required>
+      <input placeholder="Child Age" required>
+      <input placeholder="Parent Name" required>
+      <input placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Program</option>
+        <option>Playgroup</option>
+        <option>Nursery</option>
+        <option>LKG</option>
+        <option>UKG</option>
+        <option>Day Care</option>
+      </select>
+      <button class="btn">Submit Enquiry</button>
+    </form>
+  </div>
+</section>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-inner">
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>
+      📍 Kaval Bairasandra, Bengaluru<br>
+      📞 <a href="tel:+919035854071">+91 90358 54071</a><br>
+      ✉️ twinklingpetalspreschool@gmail.com
+    </p>
 
-      <div class="logo-text">
-        <span class="logo-main">Twinkling Petals</span>
-        <span class="logo-sub">PRE SCHOOL / DAY CARE</span>
-      </div>
+    <iframe
+      src="https://www.google.com/maps?q=Twinkling+Petals+Pre+School+Day+Care+Bengaluru&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
 
-      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+<footer>
+  <p>© <span id="year"></span> Twinkling Petals</p>
+</footer>
 
-      <div id="navMenu" class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#programs">Programs</a>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#admissions">Admissions</a>
-        <a href="#contact">Contact</a>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-        <!-- smooth scroll button -->
-        <button class="nav-btn scroll-btn" data-scroll-to="#admissions">
-          Admissions Open
-        </button>
-      </div>
-
-    </div>
-  </nav>
-
-  <main id="main">
-    <!-- HERO SECTION -->
-    <header id="home" class="hero">
-      <div class="container hero-grid">
-
-        <div data-animate>
-          <span class="badge">✨ Creative Learning • 18 months – 12 years</span>
-
-          <h1 class="hero-title">
-            A joyful start to your child's<br />
-            <span class="hero-highlight">learning journey.</span>
-          </h1>
-
-          <p class="hero-sub">
-            Twinkling Petals Pre School & Day Care offers a safe, fun and colourful space
-            where little learners grow through play, exploration and creativity.
-          </p>
-
-          <div class="hero-badges">
-            <span class="hero-badge play">Playgroup</span>
-            <span class="hero-badge nursery">Nursery</span>
-            <span class="hero-badge jkg">Junior KG</span>
-            <span class="hero-badge skg">Senior KG</span>
-            <span class="hero-badge skg">Day Care</span>
-          </div>
-
-          <div class="hero-buttons">
-            <!-- smooth scroll button -->
-            <button class="btn-primary scroll-btn" data-scroll-to="#admissions">
-              Enquire Now
-            </button>
-            <button
-              class="btn-outline"
-              type="button"
-              onclick="window.location.href='tel:+919035854071'">
-              Call Us
-            </button>
-          </div>
-
-          <div class="hero-meta">
-            <span class="hero-meta-pill">🕒 8 AM – 7 PM Day Care</span>
-            <span>📹 CCTV Surveillance</span>
-            <span>👩‍🏫 Small Classes</span>
-          </div>
-
-          <label class="motion-toggle">
-            <input type="checkbox" id="motionToggle" />
-            <span>Reduce animations</span>
-          </label>
-        </div>
-
-        <!-- Right side illustration -->
-        <div class="hero-graphic" data-animate>
-          <div class="hero-blob"></div>
-          <div class="squirrel">
-            <div class="squirrel-ear left"></div>
-            <div class="squirrel-ear right"></div>
-            <div class="squirrel-head">
-              <div class="squirrel-eye left"></div>
-              <div class="squirrel-eye right"></div>
-              <div class="squirrel-face"></div>
-            </div>
-            <div class="squirrel-body-main">
-              <div class="squirrel-belly"></div>
-            </div>
-            <div class="squirrel-tail"></div>
-            <div class="squirrel-cape"></div>
-          </div>
-        </div>
-
-      </div>
-    </header>
-
-    <!-- PROGRAMS -->
-    <section id="programs" class="programs">
-      <div class="container">
-        <h2 class="section-title" data-animate>Our Programs</h2>
-        <p class="section-subtitle" data-animate>
-          Age-appropriate learning for every curious little mind.
-        </p>
-
-        <div class="program-grid">
-          <article class="program-card" data-animate>
-            <h3>Playgroup</h3>
-            <div class="program-age">Age 2 – 3 years</div>
-            <ul class="program-list">
-              <li>Sensory play and exploration</li>
-              <li>Social interaction through play</li>
-              <li>Music, movement & rhyme time</li>
-            </ul>
-          </article>
-
-          <article class="program-card" data-animate>
-            <h3>Nursery</h3>
-            <div class="program-age">Age 3 – 4 years</div>
-            <ul class="program-list">
-              <li>Fine motor & pre-writing skills</li>
-              <li>Early language & number concepts</li>
-              <li>Storytelling and creative art</li>
-            </ul>
-          </article>
-
-          <article class="program-card" data-animate>
-            <h3>Junior KG (LKG)</h3>
-            <div class="program-age">Age 4 – 5 years</div>
-            <ul class="program-list">
-              <li>Phonics and early reading</li>
-              <li>Math readiness & concepts</li>
-              <li>Themes, projects & activities</li>
-            </ul>
-          </article>
-
-          <article class="program-card" data-animate>
-            <h3>Senior KG (UKG)</h3>
-            <div class="program-age">Age 5 – 6 years</div>
-            <ul class="program-list">
-              <li>School readiness & confidence</li>
-              <li>Language fluency & numeracy</li>
-              <li>Project work and presentations</li>
-            </ul>
-          </article>
-
-          <article class="program-card program-daycare" data-animate>
-            <h3>Day Care</h3>
-            <div class="program-age">18 months – 12 years</div>
-            <ul class="program-list">
-              <li>Safe, supervised space</li>
-              <li>Nutritious snacks & nap time</li>
-              <li>Homework support & activities</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features" class="features">
-      <div class="container">
-        <h2 class="section-title" data-animate>Why Parents Choose Us</h2>
-        <p class="section-subtitle" data-animate>
-          A secure, caring and engaging environment for every child.
-        </p>
-
-        <div class="board" data-animate>
-          <div class="board-title">Key Features</div>
-          <div class="board-grid">
-            <div class="board-item">CCTV Surveillance</div>
-            <div class="board-item">Safe & Secure Atmosphere</div>
-            <div class="board-item">Low Student-Teacher Ratio</div>
-            <div class="board-item">Celebrations & Events</div>
-            <div class="board-item">Co-curricular Activities</div>
-            <div class="board-item">Stage Exposure</div>
-            <div class="board-item">Power Backup</div>
-            <div class="board-item">Communication Skills</div>
-            <div class="board-item">Expert & Caring Staff</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container about-grid">
-        <div data-animate>
-          <h2 class="section-title align-left">About Twinkling Petals</h2>
-          <p class="body-text">
-            At Twinkling Petals, we believe that the early years are meant to be
-            full of wonder, joy and exploration. Our carefully designed preschool
-            and day care programs help children grow emotionally, socially and
-            academically – at their own pace.
-          </p>
-          <p class="body-text">
-            Our classrooms are bright, spacious and child-safe, with age-appropriate
-            toys, learning corners and outdoor play areas. Every child is encouraged
-            to ask questions, try new things and express themselves freely.
-          </p>
-
-          <div class="pill-row">
-            <span class="pill">Play-based learning</span>
-            <span class="pill">Value-based education</span>
-            <span class="pill">Experienced & caring teachers</span>
-          </div>
-        </div>
-
-        <div class="about-card" data-animate>
-          <h3>Creative learning program</h3>
-          <p class="body-text small">
-            A creative learning program for children ages 18 months – 12 years
-            with a perfect balance of academics, activities and free play.
-          </p>
-          <ul class="contact-list">
-            <li>📍 701, 7th Cross, KHB Colony Main Rd,<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;Kaval Bairasandra, Bengaluru,<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;Karnataka 560032
-            </li>
-            <li>
-              📞
-              <a href="tel:+919035854071">+91 90358 54071</a>
-            </li>
-            <li>
-              ✉️
-              <a href="mailto:twinklingpetalspreschool@gmail.com">
-                twinklingpetalspreschool@gmail.com
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery">
-      <div class="container">
-        <h2 class="section-title" data-animate>Our Gallery</h2>
-        <p class="section-subtitle" data-animate>
-          A glimpse into our joyful preschool moments.
-        </p>
-
-        <div class="gallery-grid">
-          <figure class="gallery-item" data-animate>
-            <img src="event-independence-1.jpeg" alt="Children dressed for cultural event" loading="lazy" />
-            <span>Children dressed for cultural event</span>
-          </figure>
-
-          <figure class="gallery-item" data-animate>
-            <img src="event-independence-2.jpeg" alt="Classroom activity with kids" loading="lazy" />
-            <span>Classroom activity with kids</span>
-          </figure>
-
-          <figure class="gallery-item" data-animate>
-            <img src="event-independence-3.jpeg" alt="Kids enjoying activity time" loading="lazy" />
-            <span>Kids enjoying activity time</span>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ADMISSIONS -->
-    <section id="admissions">
-      <div class="container">
-        <h2 class="section-title" data-animate>Admissions Open</h2>
-        <p class="section-subtitle" data-animate>
-          Fill in your details and our team will reach out to you shortly.
-        </p>
-
-        <div class="form-grid">
-          <!-- LEFT CARD -->
-          <div class="card" data-animate>
-            <h3>Admission Enquiry</h3>
-            <p>
-              Playgroup • Nursery • Junior KG • Senior KG • Day Care
-            </p>
-            <div class="chips">
-              <span class="chip">Limited seats</span>
-              <span class="chip">Sibling discounts</span>
-              <span class="chip">Day Care till 7 PM</span>
-            </div>
-
-            <form id="admissionForm" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="childName">Child Name *</label>
-                  <input id="childName" name="childName" autocomplete="name" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="childAge">Child Age *</label>
-                  <input id="childAge" name="childAge" autocomplete="off" required />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="parentName">Parent Name *</label>
-                <input id="parentName" name="parentName" autocomplete="name" required />
-              </div>
-
-              <div class="form-group">
-                <label for="phone">Phone *</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  inputmode="numeric"
-                  pattern="[0-9]*"
-                  autocomplete="tel"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="classApplied">Class Applying For *</label>
-                <select id="classApplied" name="classApplied" required>
-                  <option value="" disabled selected>Select a class</option>
-                  <option>Playgroup</option>
-                  <option>Nursery</option>
-                  <option>Junior KG (LKG)</option>
-                  <option>Senior KG (UKG)</option>
-                  <option>Day Care</option>
-                </select>
-              </div>
-
-              <button type="submit" class="btn-primary btn-full">Submit Enquiry</button>
-              <p id="admissionStatus" class="status-text"></p>
-            </form>
-          </div>
-
-          <!-- RIGHT CARD -->
-          <div class="card" data-animate>
-            <h3>Why Enrol With Us?</h3>
-            <p>
-              Well-planned curriculum, loving teachers and a safe environment
-              that feels like a second home for your child.
-            </p>
-            <ul class="program-list">
-              <li>Structured daily routine with play & learning</li>
-              <li>Regular parent communication</li>
-              <li>Celebrations, field trips & special events</li>
-              <li>Focus on values, manners & confidence</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title" data-animate>Contact Us</h2>
-
-        <div class="contact-grid">
-          <!-- LEFT: info + map -->
-          <div data-animate>
-            <h3>Twinkling Petals Pre School / Day Care</h3>
-            <ul class="contact-list">
-              <li>
-                📍 701, 7th Cross, KHB Colony Main Rd,<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Kaval Bairasandra, Bengaluru,<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Karnataka 560032
-              </li>
-              <li>
-                📞 <a href="tel:+919035854071">+91 90358 54071</a>
-              </li>
-              <li>
-                ✉️
-                <a href="mailto:twinklingpetalspreschool@gmail.com">
-                  twinklingpetalspreschool@gmail.com
-                </a>
-              </li>
-            </ul>
-
-            <div class="card contact-card map-card">
-              <div class="map-wrapper">
-                <iframe
-                  title="Twinkling Petals on Google Maps"
-                  src="https://www.google.com/maps?q=Twinkling+Petals+Pre+School+Day+Care+Kaval+Bairasandra+Bengaluru&output=embed"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <p class="helper-text">
-                Tap the map or
-                <a href="https://www.google.com/maps/search/?api=1&query=Twinkling+Petals+Pre+School+Day+Care+Kaval+Bairasandra+Bengaluru" target="_blank" rel="noopener">
-                  open in Google Maps
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <!-- RIGHT: contact form -->
-          <div class="card contact-card" data-animate>
-            <form id="contactForm" novalidate>
-              <h3>Quick Message</h3>
-              <p>Share your query and we’ll get back to you.</p>
-
-              <label for="contactName">Name *</label>
-              <input id="contactName" name="name" autocomplete="name" required />
-
-              <label for="contactPhone">Phone *</label>
-              <input
-                id="contactPhone"
-                name="phone"
-                type="tel"
-                inputmode="numeric"
-                pattern="[0-9]*"
-                autocomplete="tel"
-                required
-              />
-
-              <label for="contactEmail">Email (optional)</label>
-              <input id="contactEmail" name="email" autocomplete="email" />
-
-              <label for="contactMsg">Message *</label>
-              <textarea id="contactMsg" name="message" required></textarea>
-
-              <button type="submit" class="btn-primary btn-full">Send Message</button>
-              <p id="contactStatus" class="status-text"></p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Twinkling Petals</span>
-      <span>Designed with ❤️</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
